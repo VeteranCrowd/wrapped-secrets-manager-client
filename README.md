@@ -9,12 +9,18 @@ This package wraps the [Secrets Manager Client - AWS SDK for JavaScript v3](http
 ## wrapped-secrets-manager-client
 
 * [wrapped-secrets-manager-client](#module_wrapped-secrets-manager-client)
-    * [.WrappedSecretsManagerClient](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient)
-        * [new exports.WrappedSecretsManagerClient([options])](#new_module_wrapped-secrets-manager-client.WrappedSecretsManagerClient_new)
-        * [.createSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+createSecret) ⇒ <code>object</code>
-        * [.deleteSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+deleteSecret) ⇒ <code>object</code>
-        * [.getSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+getSecretValue) ⇒ <code>object</code>
-        * [.putSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+putSecretValue) ⇒ <code>object</code>
+    * _static_
+        * [.WrappedSecretsManagerClient](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient)
+            * [new exports.WrappedSecretsManagerClient([options])](#new_module_wrapped-secrets-manager-client.WrappedSecretsManagerClient_new)
+            * [.createSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+createSecret) ⇒ <code>CreateSecretResponse</code>
+            * [.deleteSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+deleteSecret) ⇒ <code>DeleteSecretResponse</code>
+            * [.getSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+getSecretValue) ⇒ <code>GetSecretValueResponse</code>
+            * [.putSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+putSecretValue) ⇒ <code>PutSecretValueResponse</code>
+    * _inner_
+        * [~CreateSecretResponse](#module_wrapped-secrets-manager-client..CreateSecretResponse) : <code>object</code>
+        * [~DeleteSecretResponse](#module_wrapped-secrets-manager-client..DeleteSecretResponse) : <code>object</code>
+        * [~GetSecretValueResponse](#module_wrapped-secrets-manager-client..GetSecretValueResponse) : <code>object</code>
+        * [~PutSecretValueResponse](#module_wrapped-secrets-manager-client..PutSecretValueResponse) : <code>object</code>
 
 <a name="module_wrapped-secrets-manager-client.WrappedSecretsManagerClient"></a>
 
@@ -25,10 +31,10 @@ Wraps an AWS Secrets Manager client to provide standard logging & services.
 
 * [.WrappedSecretsManagerClient](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient)
     * [new exports.WrappedSecretsManagerClient([options])](#new_module_wrapped-secrets-manager-client.WrappedSecretsManagerClient_new)
-    * [.createSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+createSecret) ⇒ <code>object</code>
-    * [.deleteSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+deleteSecret) ⇒ <code>object</code>
-    * [.getSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+getSecretValue) ⇒ <code>object</code>
-    * [.putSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+putSecretValue) ⇒ <code>object</code>
+    * [.createSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+createSecret) ⇒ <code>CreateSecretResponse</code>
+    * [.deleteSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+deleteSecret) ⇒ <code>DeleteSecretResponse</code>
+    * [.getSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+getSecretValue) ⇒ <code>GetSecretValueResponse</code>
+    * [.putSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+putSecretValue) ⇒ <code>PutSecretValueResponse</code>
 
 <a name="new_module_wrapped-secrets-manager-client.WrappedSecretsManagerClient_new"></a>
 
@@ -45,11 +51,11 @@ WrappedSqsClient constructor.
 
 <a name="module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+createSecret"></a>
 
-#### wrappedSecretsManagerClient.createSecret(options) ⇒ <code>object</code>
+#### wrappedSecretsManagerClient.createSecret(options) ⇒ <code>CreateSecretResponse</code>
 Create a secret.
 
 **Kind**: instance method of [<code>WrappedSecretsManagerClient</code>](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient)  
-**Returns**: <code>object</code> - Response object.  
+**Returns**: <code>CreateSecretResponse</code> - Response object.  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -62,11 +68,11 @@ Create a secret.
 
 <a name="module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+deleteSecret"></a>
 
-#### wrappedSecretsManagerClient.deleteSecret(options) ⇒ <code>object</code>
+#### wrappedSecretsManagerClient.deleteSecret(options) ⇒ <code>DeleteSecretResponse</code>
 Delete a secret.
 
 **Kind**: instance method of [<code>WrappedSecretsManagerClient</code>](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient)  
-**Returns**: <code>object</code> - Response object.  
+**Returns**: <code>DeleteSecretResponse</code> - Response object.  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -77,11 +83,11 @@ Delete a secret.
 
 <a name="module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+getSecretValue"></a>
 
-#### wrappedSecretsManagerClient.getSecretValue(options) ⇒ <code>object</code>
+#### wrappedSecretsManagerClient.getSecretValue(options) ⇒ <code>GetSecretValueResponse</code>
 Get a secret value.
 
 **Kind**: instance method of [<code>WrappedSecretsManagerClient</code>](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient)  
-**Returns**: <code>object</code> - Response object.  
+**Returns**: <code>GetSecretValueResponse</code> - Response object.  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -91,11 +97,11 @@ Get a secret value.
 
 <a name="module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+putSecretValue"></a>
 
-#### wrappedSecretsManagerClient.putSecretValue(options) ⇒ <code>object</code>
+#### wrappedSecretsManagerClient.putSecretValue(options) ⇒ <code>PutSecretValueResponse</code>
 Put a secret value.
 
 **Kind**: instance method of [<code>WrappedSecretsManagerClient</code>](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient)  
-**Returns**: <code>object</code> - Response object.  
+**Returns**: <code>PutSecretValueResponse</code> - Response object.  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -103,6 +109,57 @@ Put a secret value.
 | options.secretId | <code>string</code> | The ARN or name of the secret. |
 | options.value | <code>string</code> | Specifies the value of the secret. |
 | [options.versionId] | <code>string</code> | A unique identifier for the request. If you repeat the request with the same client request token, but change other parameters, AWS CloudFormation returns an error, indicating that the request is not idempotent. Generated by AWS if not submitted. |
+
+<a name="module_wrapped-secrets-manager-client..CreateSecretResponse"></a>
+
+### wrapped-secrets-manager-client~CreateSecretResponse : <code>object</code>
+**Kind**: inner typedef of [<code>wrapped-secrets-manager-client</code>](#module_wrapped-secrets-manager-client)  
+**Properties**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| arn | <code>string</code> | The Amazon Resource Name (ARN) of the secret. |
+| name | <code>string</code> | The friendly name of the secret. |
+| replicationStatus | <code>string</code> | The status of replication for the secret. |
+| versionId | <code>string</code> | The unique identifier of the version of the secret that was created. |
+
+<a name="module_wrapped-secrets-manager-client..DeleteSecretResponse"></a>
+
+### wrapped-secrets-manager-client~DeleteSecretResponse : <code>object</code>
+**Kind**: inner typedef of [<code>wrapped-secrets-manager-client</code>](#module_wrapped-secrets-manager-client)  
+**Properties**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| arn | <code>string</code> | The ARN of the secret that is scheduled for deletion. |
+| deletionDate | <code>Date</code> | The date and time after which this secret Secrets Manager can permanently delete this secret, and it can no longer be restored. This value is the date and time of the delete request plus the number of days in RecoveryWindowInDays. |
+| name | <code>string</code> | The friendly name of the secret that is scheduled for deletion. |
+
+<a name="module_wrapped-secrets-manager-client..GetSecretValueResponse"></a>
+
+### wrapped-secrets-manager-client~GetSecretValueResponse : <code>object</code>
+**Kind**: inner typedef of [<code>wrapped-secrets-manager-client</code>](#module_wrapped-secrets-manager-client)  
+**Properties**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| arn | <code>string</code> | The ARN of the secret. |
+| createdDate | <code>Date</code> | The date and time that this version of the secret was created. |
+| name | <code>string</code> | The friendly name of the secret. |
+| value | <code>string</code> | The secret value. |
+| versionId | <code>string</code> | The unique identifier of this version of the secret. |
+
+<a name="module_wrapped-secrets-manager-client..PutSecretValueResponse"></a>
+
+### wrapped-secrets-manager-client~PutSecretValueResponse : <code>object</code>
+**Kind**: inner typedef of [<code>wrapped-secrets-manager-client</code>](#module_wrapped-secrets-manager-client)  
+**Properties**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| arn | <code>string</code> | The Amazon Resource Name (ARN) of the secret. |
+| name | <code>string</code> | The friendly name of the secret. |
+| versionId | <code>string</code> | The unique identifier of the version of the secret. |
 
 
 ---
