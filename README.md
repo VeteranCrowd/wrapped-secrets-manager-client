@@ -12,10 +12,10 @@ This package wraps the [Secrets Manager Client - AWS SDK for JavaScript v3](http
     * _static_
         * [.WrappedSecretsManagerClient](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient)
             * [new exports.WrappedSecretsManagerClient([options])](#new_module_wrapped-secrets-manager-client.WrappedSecretsManagerClient_new)
-            * [.createSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+createSecret) ⇒ <code>CreateSecretResponse</code>
-            * [.deleteSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+deleteSecret) ⇒ <code>DeleteSecretResponse</code>
-            * [.getSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+getSecretValue) ⇒ <code>GetSecretValueResponse</code>
-            * [.putSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+putSecretValue) ⇒ <code>PutSecretValueResponse</code>
+            * [.createSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+createSecret) ⇒ <code>Promise.&lt;CreateSecretResponse&gt;</code>
+            * [.deleteSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+deleteSecret) ⇒ <code>Promise.&lt;DeleteSecretResponse&gt;</code>
+            * [.getSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+getSecretValue) ⇒ <code>Promise.&lt;GetSecretValueResponse&gt;</code>
+            * [.putSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+putSecretValue) ⇒ <code>Promise.&lt;PutSecretValueResponse&gt;</code>
     * _inner_
         * [~CreateSecretResponse](#module_wrapped-secrets-manager-client..CreateSecretResponse) : <code>object</code>
         * [~DeleteSecretResponse](#module_wrapped-secrets-manager-client..DeleteSecretResponse) : <code>object</code>
@@ -31,10 +31,10 @@ Wraps an AWS Secrets Manager client to provide standard logging & services.
 
 * [.WrappedSecretsManagerClient](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient)
     * [new exports.WrappedSecretsManagerClient([options])](#new_module_wrapped-secrets-manager-client.WrappedSecretsManagerClient_new)
-    * [.createSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+createSecret) ⇒ <code>CreateSecretResponse</code>
-    * [.deleteSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+deleteSecret) ⇒ <code>DeleteSecretResponse</code>
-    * [.getSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+getSecretValue) ⇒ <code>GetSecretValueResponse</code>
-    * [.putSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+putSecretValue) ⇒ <code>PutSecretValueResponse</code>
+    * [.createSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+createSecret) ⇒ <code>Promise.&lt;CreateSecretResponse&gt;</code>
+    * [.deleteSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+deleteSecret) ⇒ <code>Promise.&lt;DeleteSecretResponse&gt;</code>
+    * [.getSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+getSecretValue) ⇒ <code>Promise.&lt;GetSecretValueResponse&gt;</code>
+    * [.putSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+putSecretValue) ⇒ <code>Promise.&lt;PutSecretValueResponse&gt;</code>
 
 <a name="new_module_wrapped-secrets-manager-client.WrappedSecretsManagerClient_new"></a>
 
@@ -51,11 +51,11 @@ WrappedSqsClient constructor.
 
 <a name="module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+createSecret"></a>
 
-#### wrappedSecretsManagerClient.createSecret(options) ⇒ <code>CreateSecretResponse</code>
+#### wrappedSecretsManagerClient.createSecret(options) ⇒ <code>Promise.&lt;CreateSecretResponse&gt;</code>
 Create a secret.
 
 **Kind**: instance method of [<code>WrappedSecretsManagerClient</code>](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient)  
-**Returns**: <code>CreateSecretResponse</code> - Response object.  
+**Returns**: <code>Promise.&lt;CreateSecretResponse&gt;</code> - Response object.  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -68,11 +68,11 @@ Create a secret.
 
 <a name="module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+deleteSecret"></a>
 
-#### wrappedSecretsManagerClient.deleteSecret(options) ⇒ <code>DeleteSecretResponse</code>
+#### wrappedSecretsManagerClient.deleteSecret(options) ⇒ <code>Promise.&lt;DeleteSecretResponse&gt;</code>
 Delete a secret.
 
 **Kind**: instance method of [<code>WrappedSecretsManagerClient</code>](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient)  
-**Returns**: <code>DeleteSecretResponse</code> - Response object.  
+**Returns**: <code>Promise.&lt;DeleteSecretResponse&gt;</code> - Response object.  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -83,11 +83,11 @@ Delete a secret.
 
 <a name="module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+getSecretValue"></a>
 
-#### wrappedSecretsManagerClient.getSecretValue(options) ⇒ <code>GetSecretValueResponse</code>
+#### wrappedSecretsManagerClient.getSecretValue(options) ⇒ <code>Promise.&lt;GetSecretValueResponse&gt;</code>
 Get a secret value.
 
 **Kind**: instance method of [<code>WrappedSecretsManagerClient</code>](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient)  
-**Returns**: <code>GetSecretValueResponse</code> - Response object.  
+**Returns**: <code>Promise.&lt;GetSecretValueResponse&gt;</code> - Response object.  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -97,11 +97,11 @@ Get a secret value.
 
 <a name="module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+putSecretValue"></a>
 
-#### wrappedSecretsManagerClient.putSecretValue(options) ⇒ <code>PutSecretValueResponse</code>
+#### wrappedSecretsManagerClient.putSecretValue(options) ⇒ <code>Promise.&lt;PutSecretValueResponse&gt;</code>
 Put a secret value.
 
 **Kind**: instance method of [<code>WrappedSecretsManagerClient</code>](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient)  
-**Returns**: <code>PutSecretValueResponse</code> - Response object.  
+**Returns**: <code>Promise.&lt;PutSecretValueResponse&gt;</code> - Response object.  
 
 | Param | Type | Description |
 | --- | --- | --- |
