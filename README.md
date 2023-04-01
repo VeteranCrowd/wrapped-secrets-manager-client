@@ -14,6 +14,7 @@ This package wraps the [Secrets Manager Client - AWS SDK for JavaScript v3](http
             * [new exports.WrappedSecretsManagerClient([options])](#new_module_wrapped-secrets-manager-client.WrappedSecretsManagerClient_new)
             * [.createSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+createSecret) ⇒ <code>Promise.&lt;CreateSecretResponse&gt;</code>
             * [.deleteSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+deleteSecret) ⇒ <code>Promise.&lt;DeleteSecretResponse&gt;</code>
+            * [.describeSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+describeSecret) ⇒ <code>Promise.&lt;object&gt;</code>
             * [.getSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+getSecretValue) ⇒ <code>Promise.&lt;GetSecretValueResponse&gt;</code>
             * [.putSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+putSecretValue) ⇒ <code>Promise.&lt;PutSecretValueResponse&gt;</code>
     * _inner_
@@ -33,6 +34,7 @@ Wraps an AWS Secrets Manager client to provide standard logging & services.
     * [new exports.WrappedSecretsManagerClient([options])](#new_module_wrapped-secrets-manager-client.WrappedSecretsManagerClient_new)
     * [.createSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+createSecret) ⇒ <code>Promise.&lt;CreateSecretResponse&gt;</code>
     * [.deleteSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+deleteSecret) ⇒ <code>Promise.&lt;DeleteSecretResponse&gt;</code>
+    * [.describeSecret(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+describeSecret) ⇒ <code>Promise.&lt;object&gt;</code>
     * [.getSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+getSecretValue) ⇒ <code>Promise.&lt;GetSecretValueResponse&gt;</code>
     * [.putSecretValue(options)](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+putSecretValue) ⇒ <code>Promise.&lt;PutSecretValueResponse&gt;</code>
 
@@ -80,6 +82,19 @@ Delete a secret.
 | options.secretId | <code>string</code> | The ARN or name of the secret to delete. |
 | [options.recoveryWindowInDays] | <code>string</code> | Specifies the number of days that AWS CloudFormation waits before deleting the secret permanently. You can specify a minimum value of 7 to a maximum value of 30 days. The default value is 30. |
 | [options.forceDeleteWithoutRecovery] | <code>string</code> | Specifies whether to delete the secret without any recovery window. |
+
+<a name="module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+describeSecret"></a>
+
+#### wrappedSecretsManagerClient.describeSecret(options) ⇒ <code>Promise.&lt;object&gt;</code>
+Describe a secret.
+
+**Kind**: instance method of [<code>WrappedSecretsManagerClient</code>](#module_wrapped-secrets-manager-client.WrappedSecretsManagerClient)  
+**Returns**: <code>Promise.&lt;object&gt;</code> - Response object (see [DescribeSecretCommandOutput](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-secrets-manager/interfaces/describesecretcommandoutput.html)).  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| options | <code>object</code> | Options. |
+| options.secretId | <code>string</code> | The ARN or name of the secret to describe. |
 
 <a name="module_wrapped-secrets-manager-client.WrappedSecretsManagerClient+getSecretValue"></a>
 
