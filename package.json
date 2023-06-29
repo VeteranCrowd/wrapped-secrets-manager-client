@@ -39,6 +39,7 @@
     "eslint-plugin-jsdoc": "^46.4.2",
     "eslint-plugin-mocha": "^10.1.0",
     "jsdoc-to-markdown": "^8.0.0",
+    "lefthook": "^1.4.3",
     "mocha": "^10.2.0",
     "release-it": "^15.11.0",
     "uuid": "^9.0.0"
