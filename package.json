@@ -1,6 +1,6 @@
 {
   "name": "@veterancrowd/wrapped-secrets-manager-client",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "publishConfig": {
     "access": "public"
   },
@@ -16,7 +16,7 @@
   "homepage": "https://github.com/VeteranCrowd/wrapped-secrets-manager-client#readme",
   "keywords": [],
   "dependencies": {
-    "@aws-sdk/client-secrets-manager": "^3.358.0",
+    "@aws-sdk/client-secrets-manager": "^3.362.0",
     "aws-xray-sdk": "^3.5.0",
     "lodash": "^4.17.21"
   },
@@ -28,7 +28,7 @@
     "@babel/preset-env": "^7.22.5",
     "@babel/register": "^7.22.5",
     "@karmaniverous/get-dotenv": "^2.6.7",
-    "@types/node": "^20.3.1",
+    "@types/node": "^20.3.2",
     "babel-plugin-lodash": "^3.3.4",
     "chai": "^4.3.7",
     "chai-as-promised": "^7.1.1",
@@ -36,9 +36,10 @@
     "concat-md": "^0.5.1",
     "eslint": "^8.43.0",
     "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-jsdoc": "^46.2.6",
+    "eslint-plugin-jsdoc": "^46.4.2",
     "eslint-plugin-mocha": "^10.1.0",
     "jsdoc-to-markdown": "^8.0.0",
+    "lefthook": "^1.4.3",
     "mocha": "^10.2.0",
     "release-it": "^15.11.0",
     "uuid": "^9.0.0"
